@@ -1,0 +1,70 @@
+.projects-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+    padding: 0 5%;
+}
+
+.project-left {
+    width: 55vw;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-right {
+    width: 25vw;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-left iframe,
+.project-right .game-frame {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project-left iframe {
+    height: 70vh;
+}
+
+.project-right .game-frame {
+    aspect-ratio: 621 / 513;
+}
+
+
+.project-left,
+.project-right {
+    display: flex;
+    flex-direction: column;
+    /* Stack header and iframe vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: flex-start;
+}
+
+.project-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.project-header:hover {
+    color: rgb(212, 0, 255);
+}

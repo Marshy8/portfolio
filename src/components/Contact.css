@@ -1,0 +1,55 @@
+.contact-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.contact-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-text a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-text a:hover {
+    color: rgb(212, 0, 255);
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.copy-btn:hover {
+    color: rgb(212, 0, 255);
+}
+
+.contact-text p {
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
