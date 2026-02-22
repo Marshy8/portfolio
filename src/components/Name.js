@@ -8,7 +8,7 @@ const Name = React.forwardRef((props, ref) => {
       ref={ref}
       id="name"
       title="Buck Harris"
-      filePath="/images/background_1.JPG"
+      filePath={process.env.PUBLIC_URL + "/images/background_1.JPG"}
     >
       <img className="portrait" src="/images/portrait.JPG" alt="Portrait" />
     </Section>

@@ -8,7 +8,7 @@ const Biography = React.forwardRef((props, ref) => {
       ref={ref}
       id="biography"
       title="Biography"
-      filePath="/images/background_2.JPG"
+      filePath={process.env.PUBLIC_URL + "/images/background_2.JPG"}
     >
       <label className="text">
         My name is Buck Harris. I was born and raised in Casper, Wyoming, where

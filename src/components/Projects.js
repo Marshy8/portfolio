@@ -8,7 +8,7 @@ const Projects = React.forwardRef((props, ref) => {
       ref={ref}
       id="projects"
       title="Projects"
-      filePath="/images/background_3.JPG"
+      filePath={process.env.PUBLIC_URL + "/images/background_3.JPG"}
     >
       <div className="projects-content">
         {/* PHASTPHOTO PROJECT */}
@@ -21,7 +21,10 @@ const Projects = React.forwardRef((props, ref) => {
           >
             PHaSTphoto
           </a>
-          <iframe src="/phastphoto/index.html" title="PHASTPHOTO" />
+          <iframe
+            src={process.env.PUBLIC_URL + "/phastphoto/index.html"}
+            title="PHASTPHOTO"
+          />
         </div>
 
         {/* Local PICO-8 Game */}
@@ -35,7 +38,7 @@ const Projects = React.forwardRef((props, ref) => {
             Cell Seekers
           </a>
           <iframe
-            src="/game/cellseekers.html"
+            src={process.env.PUBLIC_URL + "/game/cellseekers.html"}
             title="Cell Seekers"
             allowFullScreen
             className="game-frame"

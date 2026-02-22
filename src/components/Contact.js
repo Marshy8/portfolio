@@ -19,7 +19,7 @@ const Contact = React.forwardRef((props, ref) => {
       ref={ref}
       id="contact"
       title="Contact"
-      filePath="/images/background_4.JPG"
+      filePath={process.env.PUBLIC_URL + "/images/background_4.JPG"}
     >
       <div className="contact-text">
         <div className="contact-item">
