@@ -1,57 +1,30 @@
 .projects-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-
-    gap: 4rem;
+    gap: 2rem;
     padding: 0 5%;
 }
 
-.project-left {
-    width: 55vw;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
+.project-left,
 .project-right {
-    width: 25vw;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .project-left iframe,
 .project-right .game-frame {
     width: 100%;
+    height: auto;
+    max-height: 70vh;
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.project-left iframe {
-    height: 70vh;
-}
-
-.project-right .game-frame {
-    aspect-ratio: 621 / 513;
-}
-
-
-.project-left,
-.project-right {
-    display: flex;
-    flex-direction: column;
-    /* Stack header and iframe vertically */
-    align-items: center;
-    /* Center horizontally */
-    justify-content: flex-start;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .project-header {
@@ -67,4 +40,30 @@
 
 .project-header:hover {
     color: rgb(212, 0, 255);
+}
+
+@media (max-width: 768px) {
+    .projects-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .project-left,
+    .project-right {
+        max-width: 90%;
+    }
+
+    .portrait {
+        width: 60%;
+    }
+
+    .label {
+        font-size: clamp(1.2rem, 6vw, 2.5rem);
+        padding: 1rem;
+    }
+
+    .text,
+    .contact-text {
+        font-size: clamp(0.9rem, 4vw, 1.5rem);
+    }
 }
