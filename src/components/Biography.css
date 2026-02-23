@@ -5,8 +5,6 @@
     padding: 2rem;
     border: 2px solid white;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     color: white;
     font-size: clamp(1rem, 2.5vw, 2rem);
