@@ -11,8 +11,7 @@ const Projects = React.forwardRef((props, ref) => {
       filePath={process.env.PUBLIC_URL + "/images/background_3.JPG"}
     >
       <div className="projects-content">
-        {/* PHASTPHOTO PROJECT */}
-        <div className="project-left">
+        <div className="project-card project-left">
           <a
             href="https://github.com/SeniorDesign2023/PHaSTphoto.git"
             target="_blank"
@@ -21,14 +20,28 @@ const Projects = React.forwardRef((props, ref) => {
           >
             PHaSTphoto
           </a>
+
+          <div className="mobile-fallback">
+            <p>Best viewed on a larger screen or computer</p>
+            <a
+              href="https://github.com/SeniorDesign2023/PHaSTphoto.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fallback-link"
+            >
+              Open PHaSTphoto on GitHub →
+            </a>
+          </div>
+
           <iframe
             src={process.env.PUBLIC_URL + "/phastphoto/index.html"}
-            title="PHASTPHOTO"
+            title="PHaSTphoto Demo"
+            allowFullScreen
+            className="project-iframe"
           />
         </div>
 
-        {/* Local PICO-8 Game */}
-        <div className="project-right">
+        <div className="project-card project-right">
           <a
             href="https://www.lexaloffle.com/bbs/?tid=149519"
             target="_blank"
@@ -37,11 +50,24 @@ const Projects = React.forwardRef((props, ref) => {
           >
             Cell Seekers
           </a>
+
+          <div className="mobile-fallback">
+            <p>Best viewed on a larger screen or computer</p>
+            <a
+              href="https://www.lexaloffle.com/bbs/?tid=149519"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fallback-link"
+            >
+              Play Cell Seekers →
+            </a>
+          </div>
+
           <iframe
             src={process.env.PUBLIC_URL + "/game/cellseekers.html"}
-            title="Cell Seekers"
+            title="Cell Seekers PICO-8 Game"
             allowFullScreen
-            className="game-frame"
+            className="project-iframe"
           />
         </div>
       </div>

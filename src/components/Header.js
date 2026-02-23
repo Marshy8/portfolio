@@ -19,10 +19,6 @@ const Header = ({ gotoSection, navRef, underlineRef }) => {
 
         <span className="nav-underline" ref={underlineRef} />
       </nav>
-
-      <nav className="rightNav">
-        <button onClick={() => (window.location.href = "/login")}></button>
-      </nav>
     </header>
   );
 };

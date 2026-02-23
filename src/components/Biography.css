@@ -1,35 +1,22 @@
 .text {
     position: relative;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .projects-content {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .project-left,
-    .project-right {
-        max-width: 90%;
-    }
-
-    .portrait {
-        width: 60%;
-    }
-
-    .label {
-        font-size: clamp(1.2rem, 6vw, 2.5rem);
+    .text {
+        margin-top: clamp(120px, 15vh, 150px);
         padding: 1rem;
-    }
-
-    .text,
-    .contact-text {
         font-size: clamp(0.9rem, 4vw, 1.5rem);
     }
 }

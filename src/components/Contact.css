@@ -1,8 +1,11 @@
 .contact-text {
     position: relative;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
     text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
     color: white;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
@@ -29,38 +32,22 @@
     transition: color 0.3s;
 }
 
+.copy-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .contact-text a:hover,
 .copy-btn:hover {
     color: rgb(212, 0, 255);
 }
 
-.contact-text p {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-    margin-top: 1rem;
-}
-
 @media (max-width: 768px) {
-    .projects-content {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
 
-    .project-left,
-    .project-right {
-        max-width: 90%;
-    }
-
-    .portrait {
-        width: 60%;
-    }
-
-    .label {
-        font-size: clamp(1.2rem, 6vw, 2.5rem);
-        padding: 1rem;
-    }
-
-    .text,
-    .contact-text {
-        font-size: clamp(0.9rem, 4vw, 1.5rem);
+    .contact-text a,
+    .copy-btn {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
     }
 }

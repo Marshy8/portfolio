@@ -5,14 +5,15 @@ const Section = forwardRef(({ id, title, filePath, children }, ref) => (
   <section ref={ref} id={id} className="section">
     <div className="wrapper-outer">
       <div className="wrapper-inner">
-        <div
-          className="background"
-          style={{ backgroundImage: `url(${filePath})` }}
-        >
-          <h1 className="label">{title}</h1>
-        </div>
+        {filePath && (
+          <div
+            className="background"
+            style={{ backgroundImage: `url(${filePath})` }}
+          />
+        )}
+        <h1 className="label">{title}</h1>
+        <div className="section-content">{children}</div>
       </div>
-      {children}
     </div>
   </section>
 ));
