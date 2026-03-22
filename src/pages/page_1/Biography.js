@@ -1,16 +1,9 @@
-import React from "react";
-import Section from "./Section.js";
 import "./Biography.css";
 
-const Biography = React.forwardRef((props, ref) => {
+const Biography = () => {
   return (
-    <Section
-      ref={ref}
-      id="biography"
-      title="Biography"
-      filePath={process.env.PUBLIC_URL + "/images/background_2.JPG"}
-    >
-      <label className="text">
+    <div className="biography-content">
+      <p className="paragraph">
         My name is Buck Harris. I was born and raised in Casper, Wyoming, where
         I completed my primary education in the local public school system. I
         earned the Trustees Scholarship, a full-ride award to the University of
@@ -22,9 +15,16 @@ const Biography = React.forwardRef((props, ref) => {
         computer science. Outside of academics and work, I enjoy fly fishing,
         riding my sport bike, and spending time with loved ones. I am a hard
         worker, a quick learner, and ready to take on any challenge.
-      </label>
-    </Section>
+      </p>
+    </div>
   );
-});
+};
 
-export default Biography;
+const biographyModual = {
+  id: "biography",
+  label: "Biography",
+  background: "/images/background_biography.JPG",
+  component: Biography,
+};
+
+export default biographyModual;

@@ -1,0 +1,17 @@
+.footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--text-color);
+    padding: var(--global-clamp);
+    font-size: 15px;
+}
+
+.link {
+    color: var(--text-color);
+}
+
+.link:hover {
+    opacity: 0.75;
+}

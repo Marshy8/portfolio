@@ -1,0 +1,22 @@
+.header {
+    padding: var(--global-clamp);
+}
+
+button {
+    border: none;
+    background: none;
+    color: var(--text-color);
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+button.active {
+    border: var(--border);
+    border-radius: var(--border-radius);
+}

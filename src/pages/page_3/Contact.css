@@ -1,0 +1,24 @@
+.contact-content {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--global-clamp);
+}
+
+.contact-content, .contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    color: var(--text-color);
+}
+
+.contact-content h3 {
+    font-size: 3vw;
+}
+
+.contact-content button {
+    font-size: 2vw;
+}

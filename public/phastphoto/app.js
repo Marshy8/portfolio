@@ -1,7 +1,6 @@
 let photos = [];
 let selectedTags = [];
 
-// Load metadata
 async function loadPhotos() {
   const response = await fetch("metadata.json");
   photos = await response.json();

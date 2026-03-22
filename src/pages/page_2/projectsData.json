@@ -1,0 +1,16 @@
+[
+  {
+    "id": "phastphoto",
+    "title": "PHaSTphoto",
+    "link": "https://github.com/SeniorDesign2023/PHaSTphoto.git",
+    "iframeSrc": "/phastphoto/index.html",
+    "aspectRatio": "1.78"
+  },
+  {
+    "id": "cellseekers",
+    "title": "Cell Seekers",
+    "link": "https://www.lexaloffle.com/bbs/?tid=149519",
+    "iframeSrc": "/game/cellseekers.html",
+    "aspectRatio": "1"
+  }
+]

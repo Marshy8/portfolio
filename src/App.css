@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+    --text-color: #a7b8be;
+    --border: 2px solid #18523a;
+    --border-radius: 10px;
+    --font-family: 'Roboto', sans-serif;
+    --global-clamp: clamp(0.5rem, 2vw, 1.5rem);
+}

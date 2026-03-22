@@ -28,14 +28,9 @@ body {
 }
 
 .gallery img {
-    width: 200px;
+    width: calc(25% - 20px);
     margin: 10px;
-    cursor: pointer;
     transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
 }
 
 .tag-group {
@@ -43,10 +38,12 @@ body {
 }
 
 .tag-group h3 {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
     margin-bottom: 5px;
 }
 
 .checkbox-label {
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
     display: block;
     margin-bottom: 3px;
 }
