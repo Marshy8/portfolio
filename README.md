@@ -8,6 +8,6 @@ My first crack at this site produced something that worked, was deliverable, and
 
 AI is cool and will have its place, but simplicity almost always wins. You can’t expect to get something refined by adding unnecessary junk to it for the sake of it. 
 
-Although probably trivial to most of you, something that I am very proud of is the way this code is organized. To me, it feels very readable and portable for future projects. Also, it should be noted that this is still a work in progress! 
+Although probably trivial to most of you, something that I am very proud of is the way this code is organized. To me, it feels very readable and portable for future projects. Also, it should be noted that this is still a work in progress! I will be updating it to use vite eventually. 
 
 Thank you for viewing my work, and I hope that maybe one day I can be an asset, even if it’s just to one person.
